@@ -117,6 +117,17 @@ ul {
   background-color: #2ea043;
 }
 
+.logo {
+  height: 60px;
+  vertical-align: middle;
+  margin-left: 6px;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
 /* Responsive Typography */
 h1 {
   font-size: 2rem;
