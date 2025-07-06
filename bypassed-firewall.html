@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bypassed Firewall | Matias Vanarelli</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Matias Vanarelli</h1>
+    <p>Cybersecurity Consultant | Penetration Tester | Red Teamer</p>
+
+    <button class="hamburger" onclick="toggleMenu()">☰ Menu</button>
+    <nav id="navbar">
+      <a href="index.html">Home</a>
+      <a href="index.html#services">Services</a>
+      <a href="index.html#experience">Experience</a>
+      <a href="index.html#education">Education</a>
+      <a href="index.html#contact">Contact</a>
+      <a href="blog.html">Blog</a>
+    </nav>
+  </header>
+
+  <article>
+    <h1>How I Bypassed a Corporate Firewall</h1>
+    <p><em>Published June 2025</em></p>
+
+    <p>During a recent internal network engagement, the client's firewall was configured with restrictive outbound rules, but as always — where there’s an egress, there’s a way.</p>
+
+    <h2>Initial Setup</h2>
+    <p>After landing a shell on an internal system via a phishing payload, I quickly realized most outbound ports were blocked — even 443. DNS was still open, though.</p>
+
+    <h2>DNS Tunneling</h2>
+    <p>I deployed a <strong>dnscat2</strong> server on my VPS and connected via a PowerShell payload. While throughput was limited, I had enough bandwidth to exfil credentials and later upload a stager.</p>
+
+    <h2>Payloads Used</h2>
+    <ul>
+      <li>Initial loader via macro + mshta</li>
+      <li>Stage 1 DNS reverse shell (dnscat2)</li>
+      <li>Stage 2 PowerShell Empire stager</li>
+    </ul>
+
+    <h2>Lessons Learned</h2>
+    <p>Organizations often overlook outbound traffic restrictions — especially DNS. I recommended egress filtering, application whitelisting, and DNS logging via SIEM as remediation.</p>
+
+    <p>This was a great example of why layered security matters. Firewalls aren’t magic — they’re just part of the story.</p>
+
+    <p><a href="blog.html">&larr; Back to Blog</a></p>
+  </article>
+
+  <footer>
+    <p>&copy; 2025 in7ruder</p>
+  </footer>
+
+  <script src="main.js"></script>
+
+</body>
+</html>
