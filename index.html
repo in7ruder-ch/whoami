@@ -29,23 +29,71 @@
     </header>
 
     <section id="about">
-        <h2>whoami</h2>
+        <h2>whoami*</h2>
         <p>Certified Ethical Hacker (CEH) and Tier 2 SOC Analyst, currently pursuing the Offensive Security Certified
             Professional (OSCP) certification. I specialize in offensive security, red teaming, and adversary
             simulation, with hands-on experience in detecting, analyzing, and responding to advanced threats in a SOC
             environment.
             My background also includes web development with the MERN stack and financial analysis, which gives me a
             unique perspective on both the technical and business aspects of cybersecurity.</p>
+        <p><strong>*Based in Switzerland – available worldwide.</strong></p>
     </section>
 
     <section id="services">
         <h2>Services</h2>
         <ul>
-            <li><strong>Penetration Testing:</strong> Web applications, infrastructure, WiFi.</li>
-            <li><strong>Red Team Operations:</strong> Physical access, OSINT, evasion.</li>
-            <li><strong>Social Engineering:</strong> Pretexting, phishing, awareness training.</li>
+            <li>
+                <strong>External & Internal Penetration Testing:</strong>
+                Comprehensive assessments targeting public-facing assets and internal networks. Focused on real-world
+                attack vectors, privilege escalation, and lateral movement.
+            </li>
+            <li>
+                <strong>Web Application Security Testing:</strong>
+                In-depth analysis based on the OWASP Top Ten, including injection flaws, XSS, IDOR, authentication
+                bypass, and misconfigurations.
+            </li>
+            <li>
+                <strong>Social Engineering:</strong>
+                Human-layer attacks including pretexting, phishing simulations, and vishing campaigns to assess
+                organizational awareness and security training effectiveness.
+            </li>
+            <li>
+                <strong>Red Team Operations:</strong>
+                Simulated full-scope attacks combining digital intrusion, physical access, OSINT, and evasion techniques
+                to test detection and response capabilities.
+            </li>
+            <li>
+                <strong>Physical Security Assessments:</strong>
+                Evasion of physical security controls, badge cloning, access testing, and site walkthroughs to identify
+                weaknesses in real-world perimeter defense.
+            </li>
         </ul>
+
+        <section id="contact-form" class="cta">
+            <h3>Request a Free Consultation</h3>
+            <p>
+                Want to assess your company’s cybersecurity posture? Send me your details and I’ll reach out to schedule
+                a free consultation or initial test.
+            </p>
+            <form action="https://formspree.io/f/myzjallp" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required />
+                <input type="email" name="_replyto" placeholder="Your Email" required />
+                <input type="text" name="company" placeholder="Company Name" required />
+                <input type="url" name="website" placeholder="Website URL (https://...)" required />
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                <input type="text" name="_gotcha" style="display:none;" tabindex="-1" autocomplete="off" />
+                <button type="submit">Send Message</button>
+            </form>
+            <div id="thank-you" style="display:none; margin-top:1.5rem;">
+                <p style="color: #2ea043; font-weight: bold;">
+                    ✅ Thank you! Your message has been sent successfully.
+                </p>
+            </div>
+
+        </section>
+
     </section>
+
 
     <section id="experience">
         <h2>Professional Experience</h2>
