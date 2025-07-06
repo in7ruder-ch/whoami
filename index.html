@@ -79,7 +79,10 @@
                 <input type="text" name="name" placeholder="Your Name" required />
                 <input type="email" name="_replyto" placeholder="Your Email" required />
                 <input type="text" name="company" placeholder="Company Name" required />
-                <input type="url" name="website" placeholder="Website URL (https://...)" required />
+                <input type="text" name="website" placeholder="Website (e.g. example.com or https://example.com)"
+                    pattern="^(https?:\/\/)?[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+                    title="Enter a valid website like example.com or https://example.com" required />
+
                 <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
                 <input type="text" name="_gotcha" style="display:none;" tabindex="-1" autocomplete="off" />
                 <button type="submit">Send Message</button>
