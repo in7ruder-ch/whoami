@@ -1,0 +1,192 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Day 1 – Foundations of Social Engineering</title>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style-course.css">
+</head>
+<body>
+
+<h1>🧠 Day 1 – Foundations of Social Engineering</h1>
+<blockquote><strong>"Leave them better off for having met you." – Chris Hadnagy</strong></blockquote>
+
+<h2>🎯 Learning Objectives</h2>
+<ul>
+  <li>Understand what social engineering really is, beyond theory</li>
+  <li>Identify its key psychological mechanisms</li>
+  <li>Learn the four core phases of a social engineering operation, with real-life inspired examples</li>
+  <li>Analyze a real-world case and break down the attack process</li>
+  <li>Begin thinking like both an attacker and a defender</li>
+</ul>
+
+<h2>🔍 What is Social Engineering?</h2>
+<p>Social engineering is the manipulation of people into doing things they wouldn’t normally do — whether it’s clicking a malicious link, revealing sensitive information, or granting access to physical or digital spaces.</p>
+<p>It’s not about exploiting systems — it’s about exploiting trust, emotion, and routine. Social engineering is effective because people are inherently helpful, curious, and sometimes rushed. That’s the entry point for manipulation.</p>
+<blockquote>“It’s always easier to exploit a person’s trust than to exploit a system’s firewall.” – Chris Hadnagy</blockquote>
+<p>Social engineers bypass technology — they go after the human element. Your password policy might be airtight, but if I can call your coworker and make them believe I’m IT support, and they give me their credentials? Game over.</p>
+<p><strong>🧠</strong> “In a red team test for a retail company, I managed to get access to their employee portal just by calling as ‘Dave from HQ’ and pretending there had been a software update issue. I dropped a few internal team names (found on LinkedIn) and mimicked their internal lingo. The support agent never questioned me — he even thanked me for being proactive.”</p>
+
+<h2>🔑 Key Concepts (Explained)</h2>
+
+<h3>🪪 Pretexting</h3>
+<p>A pretext is the fake identity or scenario you create to justify the interaction. It could be:</p>
+<ul>
+  <li>A delivery driver who needs a signature</li>
+  <li>An IT admin who “needs to verify your credentials”</li>
+  <li>A job applicant following up on an interview</li>
+</ul>
+<p>The key? Believability and context.</p>
+<p><strong>🧠</strong> “Once, I posed as a job applicant who was 'trying to upload a portfolio but kept getting 403 errors.’ I called tech support saying I was anxious about missing the deadline. The support agent walked me through their upload system and even told me the directory structure — without realizing he had just handed me internal documentation.”</p>
+
+<h3>🧠 Influence & Persuasion</h3>
+<p>These are your tools. As a social engineer (or defender), you need to understand how people make decisions under pressure.</p>
+<p>Common psychological triggers:</p>
+<ul>
+  <li><strong>Authority:</strong> People tend to obey those they see as being in charge</li>
+  <li><strong>Urgency:</strong> “You need to act fast — there’s a deadline.”</li>
+  <li><strong>Liking:</strong> Friendly, relatable people get what they want more often</li>
+  <li><strong>Scarcity:</strong> “There are only two licenses left. Act now.”</li>
+  <li><strong>Consistency:</strong> “You agreed to help last time, can I count on you again?”</li>
+</ul>
+<p><strong>🧠</strong> “One of my simplest but most effective tactics? Calling as ‘John from facilities’ and saying I had two work orders stuck in the queue and needed badge access to the top floor. People hate inefficiencies — and when you sound annoyed but competent, they’ll rush to help.”</p>
+
+<h3>💣 The Payload</h3>
+<p>This is the goal of the attack — what you're actually after:</p>
+<ul>
+  <li>Credentials</li>
+  <li>Internal documents</li>
+  <li>Access to a building</li>
+  <li>System control</li>
+</ul>
+<p><strong>🧠</strong> “My payload in one engagement was just a company Wi-Fi password. With that, I could connect from the parking lot and start my network scan. I got it in under 3 minutes after posing as a new contractor who ‘still hadn’t received the onboarding email.’”</p>
+
+<h2>🧱 The 4 Phases of a Social Engineering Attack (Expanded)</h2>
+<p>Social engineering is most effective when it’s planned like a campaign. It doesn’t just happen — it unfolds in phases.</p>
+
+<h3>1. Reconnaissance</h3>
+<p>The gathering of information. This phase is about learning:</p>
+<ul>
+  <li>Company culture</li>
+  <li>Tech stack</li>
+  <li>Communication style</li>
+  <li>Employee names</li>
+  <li>Schedules and routines</li>
+</ul>
+<p>Sources include:</p>
+<ul>
+  <li>LinkedIn, Twitter, Instagram</li>
+  <li>Press releases</li>
+  <li>GitHub repos</li>
+  <li>Company blogs</li>
+  <li>Public-facing PDFs and documents</li>
+</ul>
+<p><strong>🧠</strong> “In one engagement, I learned from an employee’s tweet that she always got coffee at 9:30 a.m. I timed my visit to the lobby just as she returned — coffee in hand — and used the moment to tailgate into the building.”</p>
+
+<h3>2. Engagement</h3>
+<p>Initiating contact under the pretext. The goal is to build trust quickly:</p>
+<ul>
+  <li>Speak their language</li>
+  <li>Use emotional hooks</li>
+  <li>Mirror behavior and tone</li>
+</ul>
+<p><strong>🧠</strong> “I once entered a tech startup’s office with a delivery uniform and said, ‘I’ve got a return package — someone here signed for it yesterday.’ The receptionist didn’t even ask for ID. I was inside in under 60 seconds.”</p>
+<p>Engagement is performance — you’re acting, improvising, adapting.</p>
+
+<h3>3. Exploitation</h3>
+<p>This is where the ask happens. The attacker gets what they want:</p>
+<ul>
+  <li>Access</li>
+  <li>Info</li>
+  <li>A click</li>
+  <li>Compliance</li>
+</ul>
+<p><strong>🧠</strong> “After 5 minutes of friendly chat during a fake ‘customer survey,’ I asked an employee what software they use for remote desktop. They told me, and I casually followed with, ‘Oh, and what credentials do you use for that?’ They laughed — but answered.”</p>
+<p>The best exploitation doesn’t feel like exploitation.</p>
+
+<h3>4. Exit</h3>
+<p>Once the goal is reached, the attacker must disengage cleanly. The goal: no suspicion.</p>
+<p><strong>🧠</strong> “My go-to exit line is: ‘Thanks so much, I’ll get this info to my boss right away. You’ve been a lifesaver today.’ Then I casually walk out, wave at the front desk, and vanish before anyone asks questions.”</p>
+<p>Never leave behind a “bad feeling.” You want the interaction to feel forgettable.</p>
+
+<h2>📚 Real-World Case: The 2020 Twitter Hack</h2>
+<p>In July 2020, attackers used phone-based social engineering to convince Twitter employees they were internal IT. They gained access to admin tools and hijacked high-profile accounts (Elon Musk, Obama, Apple).</p>
+<p>The attackers:</p>
+<ul>
+  <li>Used pretexting to impersonate IT</li>
+  <li>Applied authority and urgency to pressure help desk agents</li>
+  <li>Gained access to internal systems via credentials</li>
+  <li>Left chaos behind — but no immediate suspicion</li>
+</ul>
+<p><strong>💡 Lesson:</strong> Even tech-savvy employees are vulnerable when under pressure and emotionally triggered.</p>
+
+
+<h2>✅ Multiple-Choice Quiz</h2>
+<form class="quiz">
+  <fieldset>
+    <legend>1. What is “pretexting” in social engineering?</legend>
+    <label><input type="radio" name="q1" value="B"> B) Creating a fake scenario to justify engagement</label><br>
+    <label><input type="radio" name="q1" value="A"> A) Planting malware</label><br>
+    <label><input type="radio" name="q1" value="C"> C) Running a technical scan</label><br>
+    <label><input type="radio" name="q1" value="D"> D) Sending a phishing email</label>
+  </fieldset><br>
+  <fieldset>
+    <legend>2. What’s the main goal of the “exploitation” phase?</legend>
+    <label><input type="radio" name="q2" value="C"> C) To deliver the ask</label><br>
+    <label><input type="radio" name="q2" value="A"> A) To leave undetected</label><br>
+    <label><input type="radio" name="q2" value="B"> B) To gain trust</label><br>
+    <label><input type="radio" name="q2" value="D"> D) To gather intel</label>
+  </fieldset><br>
+  <fieldset>
+    <legend>3. Which of the following is an example of the authority principle?</legend>
+    <label><input type="radio" name="q3" value="B"> B) Pretending to be the CEO’s assistant</label><br>
+    <label><input type="radio" name="q3" value="A"> A) Asking for help with a deadline</label><br>
+    <label><input type="radio" name="q3" value="C"> C) Appearing uncertain to get sympathy</label><br>
+    <label><input type="radio" name="q3" value="D"> D) Talking about recent weather</label>
+  </fieldset><br>
+  <fieldset>
+    <legend>4. Which phase involves observing habits and routines?</legend>
+    <label><input type="radio" name="q4" value="B"> B) Reconnaissance</label><br>
+    <label><input type="radio" name="q4" value="A"> A) Engagement</label><br>
+    <label><input type="radio" name="q4" value="C"> C) Exploitation</label><br>
+    <label><input type="radio" name="q4" value="D"> D) Exit</label>
+  </fieldset><br>
+  <fieldset>
+    <legend>5. Why is the exit phase important in SE?</legend>
+    <label><input type="radio" name="q5" value="C"> C) To avoid triggering suspicion</label><br>
+    <label><input type="radio" name="q5" value="A"> A) To extract more data</label><br>
+    <label><input type="radio" name="q5" value="B"> B) To remain in the network</label><br>
+    <label><input type="radio" name="q5" value="D"> D) To save bandwidth</label>
+  </fieldset><br>
+  <button type="button" id="checkQuiz">Check Answers</button>
+  <div id="quizResult"></div>
+</form>
+<h2>🛠️ Practical Assignment</h2>
+<div class="assignment">
+  <h3>Title: Dissect a Real Attack</h3>
+  <p>Choose one of the following real scenarios:</p>
+  <ul>
+    <li><a href="https://www.vice.com/en/article/93b5j3/the-twitter-bitcoin-hack-explained" target="_blank">2020 Twitter Bitcoin Hack</a></li>
+    <li><a href="https://www.wired.com/story/uber-insider-attack" target="_blank">2016 Uber Insider Attack</a></li>
+    <li><a href="https://www.csoonline.com/article/3330368/the-rsa-security-breach.html" target="_blank">2011 RSA Breach</a></li>
+  </ul>
+  <p>Write a 150–300 word analysis answering:</p>
+  <ul>
+    <li>What was the pretext?</li>
+    <li>How was trust established?</li>
+    <li>What was the payload?</li>
+    <li>Did the attacker exit cleanly?</li>
+    <li>What signs (if any) could have raised suspicion earlier?</li>
+    <li>From a defender’s perspective — what could have stopped this?</li>
+  </ul>
+</div>
+
+<h2>🧾 End-of-Day Reflection</h2>
+<p>Social engineering is an emotional attack vector. It works not because systems are flawed — but because humans are predictable, generous, and often rushed.</p>
+<p>By understanding how these manipulations work, you gain insight into both how to exploit and how to defend. Whether you’re securing your company or simulating attacks for red team engagements — this foundation will serve you every step of the way.</p>
+
+<script src="script.js"></script>
+</body>
+</html>
